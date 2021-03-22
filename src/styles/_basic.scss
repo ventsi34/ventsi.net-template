@@ -1,0 +1,62 @@
+html, body, h1, h2, h3, h4, h5, h6,
+section, header, div, span, button, a, img {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a, a:hover, a:active, a:visited {
+  color: $color-2;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  color: $color-3;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  background: $color-1;
+  font-family: $base-font;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  color: $color-3;
+  border: 0.4rem solid $color-2;
+  border-radius: 4rem;
+  min-height: 70px;
+  min-width: 215px;
+  line-height: 6.2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  cursor: pointer;
+  outline: none;
+  transition: 300ms linear all;
+
+  &:hover {
+    background: $color-2;
+    color: $color-3;
+  }
+
+  &.filled {
+    background: $color-2;
+    color: $color-3;
+  }
+
+  &.filled:hover {
+    background: none;
+  }
+}

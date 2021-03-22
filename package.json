@@ -1,0 +1,19 @@
+{
+  "name": "ventsi.net-template",
+  "version": "1.0.0",
+  "description": "Ventsi.net template implementation",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "gulp && gulp watch",
+    "build": "gulp"
+  },
+  "author": "Ventsislav Dimitrov",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
+}
