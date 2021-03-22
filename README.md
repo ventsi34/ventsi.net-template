@@ -1,6 +1,6 @@
 # Ventsi.net static template
 
-## Developig process
+## Developing process
 First install the dependencies
 
 ``` npm install ```
@@ -24,7 +24,7 @@ Start following command
 the template will be build in the `dist` folder.
 
 
-## Build by following technologies and resources
+## Built by the following technologies and resources
 - HTML5
 - SASS
 - Gulp
