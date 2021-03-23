@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  position: relative;
   height: 100vh;
   color: $color-3;
   font-size: 2.8rem;
@@ -31,32 +32,32 @@ body {
   font-weight: 400;
 }
 
-.btn {
-  display: inline-block;
-  background: none;
-  color: $color-3;
-  border: 0.4rem solid $color-2;
-  border-radius: 4rem;
-  min-height: 70px;
-  min-width: 215px;
-  line-height: 6.2rem;
-  text-align: center;
-  font-size: 2.8rem;
-  cursor: pointer;
-  outline: none;
-  transition: 300ms linear all;
+// .btn {
+//   display: inline-block;
+//   background: none;
+//   color: $color-3;
+//   border: 0.4rem solid $color-2;
+//   border-radius: 4rem;
+//   min-height: 70px;
+//   min-width: 215px;
+//   line-height: 6.2rem;
+//   text-align: center;
+//   font-size: 2.8rem;
+//   cursor: pointer;
+//   outline: none;
+//   transition: 300ms linear all;
 
-  &:hover {
-    background: $color-2;
-    color: $color-3;
-  }
+//   &:hover {
+//     background: $color-2;
+//     color: $color-3;
+//   }
 
-  &.filled {
-    background: $color-2;
-    color: $color-3;
-  }
+//   &.filled {
+//     background: $color-2;
+//     color: $color-3;
+//   }
 
-  &.filled:hover {
-    background: none;
-  }
-}
+//   &.filled:hover {
+//     background: none;
+//   }
+// }
