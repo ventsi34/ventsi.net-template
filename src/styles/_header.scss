@@ -3,6 +3,7 @@ header {
   top: 5rem;
   left: 5%;
   width: 90%;
+  z-index: 5;
 
   .logo {
     width: 12.8rem;
@@ -82,6 +83,7 @@ header {
       color: $color-2;
       font-size: 1.4rem;
       transition: opacity linear 300ms;
+      pointer-events: none;
     }
 
     &:hover label,
