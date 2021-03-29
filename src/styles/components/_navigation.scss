@@ -11,6 +11,8 @@ nav {
   opacity: 0;
   transition: all 50ms linear;
   transition-delay: 600ms;
+  pointer-events: none;
+  @include generateAnimation(show-content, 400ms);
 
   &::before {
     position: absolute;
@@ -91,11 +93,12 @@ nav {
 
     &:nth-child(2) a,
     &:nth-child(3) a {
-      background: #644453;
+      background: $color-4;
     }
   }
 
   &.active {
+    pointer-events: all;
     opacity: 1;
     transition-delay: 0ms;
 

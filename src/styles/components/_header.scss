@@ -4,6 +4,8 @@ header {
   left: 5%;
   width: 90%;
   z-index: 5;
+  opacity: 0;
+  @include generateAnimation(show-content, 400ms, linear, forwards);
 
   .logo {
     width: 12.8rem;

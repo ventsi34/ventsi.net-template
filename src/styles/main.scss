@@ -1,3 +1,13 @@
-@import "./variables";
-@import "./basic";
-@import "./header";
+/* Mains */
+@import "./mains/variables";
+@import "./mains/mixins";
+@import "./mains/animations";
+@import "./mains/basic";
+
+/* Components */
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/social-networks";
+
+/* Pages */
+@import "./pages/home";

@@ -1,0 +1,18 @@
+@mixin opacityAnimation($name, $from, $to) {
+  @keyframes #{$name} {
+    from {
+      opacity: #{$from};
+    }
+    to {
+      opacity: #{$to};
+    }
+  }
+}
+
+@mixin generateAnimation($name, $duration: 300ms, $easing: linear, $fillMode: none, $delay: 0ms) {
+  animation-name: #{$name};
+  animation-duration: #{$duration};
+  animation-fill-mode: #{$fillMode};
+  animation-timing-function: #{$easing};
+  animation-delay: #{$delay};
+}
