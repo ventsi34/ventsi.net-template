@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+  <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+  <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script> 
+  <link rel="stylesheet" href="main.css">
+  <title>Ventsi.NET</title>
+</head>
+<body class="gallery" data-title="Bad Pixel">
+  <header>
+    <img src="static/images/ventsi-logo.png" class="logo" width="128" />
+    <button type="button" class="menu-btn" id="menu-btn">
+      <span>&nbsp;</span>
+      <span>&nbsp;</span>
+      <span>&nbsp;</span>
+      <label>menu</label>
+    </button>
+  </header>
+  <nav id="nav" class="main-menu">
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="#"><i class="fas fa-palette"></i>Gallery</a></li>
+      <li><a href="#"><i class="fas fa-file"></i>CV</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i>Contact me</a></li>
+    </ul>
+  </nav>
+  <section>
+    <nav class="gallery-menu">
+      <ul>
+        <li class="active"><a href="#">&nbsp;</a></li>
+        <li><a href="#">&nbsp;</a></li>
+        <li><a href="#">&nbsp;</a></li>
+        <li><a href="#">&nbsp;</a></li>
+        <li><a href="#">&nbsp;</a></li>
+      </ul>
+    </nav>
+    <img class="project-image" src="./static/images/image-holder.png" />
+    <div class="content-wrapper">
+      <h3>Bad Pixel</h3>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.</p>  
+      <div class="social-container wide">
+        <ul>
+          <li><a href="#"><i class="fas fa-envelope"></i>Email</a></li>
+          <li><a href="#"><i class="fab fa-github-alt"></i>Github</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script>
+    const menu = document.getElementById('nav');
+    const btn = document.getElementById('menu-btn');
+    btn.addEventListener('click', () => {
+      if(menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        btn.classList.remove('active');
+      } else {
+        menu.classList.add('active');
+        btn.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html> 

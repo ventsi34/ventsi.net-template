@@ -21,7 +21,7 @@
       border-top: 1px solid $color-2;
       font-size: 1.2rem;
       color: $color-2;
-      content: 'Find me';
+      content: attr(title);
       text-align: right;
       transform-origin: top right;
       transform: rotateZ(-90deg);
@@ -56,6 +56,12 @@
       &:nth-child(2) {
         background-color: $color-4;
       }
+    }
+  }
+
+  &.wide {
+    ul li a {
+      width: 14rem;
     }
   }
 }
