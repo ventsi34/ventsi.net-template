@@ -17,6 +17,12 @@ img {
 a, a:hover, a:active, a:visited {
   color: $color-2;
   text-decoration: none;
+  transition: opacity 250ms linear;
+  opacity: 1;
+}
+
+a.hover-effect:hover {
+  opacity: 0.8;
 }
 
 html {
@@ -61,5 +67,10 @@ body {
 
   &.filled:hover {
     background: none;
+    color: $color-2;
   }
+}
+
+.mx-auto {
+  margin: 0 auto;
 }
