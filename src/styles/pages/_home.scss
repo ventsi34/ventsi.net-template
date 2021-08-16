@@ -21,6 +21,7 @@
     content: '';
     opacity: 0.4;
     background-image: url('./static/images/background-focus.png') ;
+    background-size: contain;
   }
 
   .content-wrapper {
@@ -57,17 +58,30 @@
 
   .image-wrapper {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     width: 50%;
     height: 100vh;
-    padding-top: 8rem;
+    padding-top: 80px;
     overflow: hidden;
     text-align: center;
 
     img {
       width: auto;
       height: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 930px) {
+    .image-wrapper {
+      padding-top: 130px;
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    .image-wrapper {
+      text-align: left;
+      height: 90vh;
     }
   }
 }

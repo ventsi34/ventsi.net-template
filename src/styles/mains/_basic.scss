@@ -27,6 +27,13 @@ a.hover-effect:hover {
 
 html {
   font-size: 10px;
+  @media only screen and (max-width: 1130px) {
+    font-size: 7px;
+  }
+
+  @media only screen and (max-width: 840px) {
+    font-size: 6px;
+  }
 }
 
 body {
