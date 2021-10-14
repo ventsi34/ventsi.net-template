@@ -1,6 +1,9 @@
 header {
   position: absolute;
   top: 5rem;
+  @media only screen and (max-height: 620px) {
+    top: 2rem;
+  }
   left: 5%;
   width: 90%;
   z-index: 12;

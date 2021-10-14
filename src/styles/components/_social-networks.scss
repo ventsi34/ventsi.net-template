@@ -1,22 +1,21 @@
 .social-container {
   position: absolute;
+  overflow: hidden;
   bottom: 0;
-  left: 0;
-  font-size: 0;
 
-  ul {
-    position: relative;
+  &-list {
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     list-style: none;
+    padding: 0 2rem 0 0;
     margin: 0;
-    padding: 0;
-    
+
     &:after {
       position: absolute;
-      bottom: 9.9rem;
-      right: -1rem;
-      width: 12rem;
+      bottom: 7.9rem;
+      right: 1.8rem;
+      width: 9.9rem;
       line-height: 2rem;
       border-top: 1px solid $color-2;
       font-size: 1.2rem;
@@ -26,42 +25,49 @@
       transform-origin: top right;
       transform: rotateZ(-90deg);
     }
-
-    li {
-      display: inline-block;
-      background-color: $color-2;
-
-      a {
-        display: block;
-        width: 12rem;
-        height: 12rem;
-        padding-top: 1.8rem;
-        font-size: 1.6rem;
-        color: $color-3;
-        text-align: center;
-        transition: height 0.15s ease-out;
-        overflow: hidden;
-
-        svg {
-          margin: 0 auto;
-          width: 100% !important;
-          font-size: 6rem !important;
-        }
-      
-        &:hover {
-          height: 14rem;
-        }
-      }
-
-      &:nth-child(2) {
-        background-color: $color-4;
-      }
-    }
   }
 
-  &.wide {
-    ul li a {
-      width: 14rem;
+  &-items.spaces {
+    margin: 0 0.5rem;
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    background-color: $color-2;
+    transition: height .2s ease-out;
+  
+    &:nth-child(2) {
+      background-color: $color-4;
+    }
+
+    &:last-of-type {
+      margin: 0 0.5rem 0 0;
+    }
+
+    &:hover {
+      height: 11rem;
+      color: $color-3;
+    }
+  }
+  
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: $color-3 !important;
+
+    svg {
+      font-size: 4.5rem;
+    }
+
+    &:hover {
+      color: $color-3;
     }
   }
 }

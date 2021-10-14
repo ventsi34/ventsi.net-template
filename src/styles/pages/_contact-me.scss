@@ -7,6 +7,15 @@
     flex-direction: column;
     padding: 12rem 0 12rem;
     width: 65rem;
+    @media only screen and (max-width: 730px) {
+      width: 100%;
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+    @media only screen and (max-width: 400px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
     height: 100vh;
     margin: 0 auto;
     opacity: 0;
@@ -88,7 +97,6 @@
   }
 
   .social-container {
-    left: 50%;
-    margin-left: -21rem;
+    margin: 0 auto;
   }
 }
