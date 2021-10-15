@@ -32,10 +32,16 @@
     <h2>Contact me</h2>
     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
     <form action="">
-      <label for="email">Email</label>
-      <input type="email" id="email" />
-      <label for="message">Message</label>
-      <textarea cols="30" rows="10" id="message"></textarea>
+      <div class="field-wrapper">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <!-- <span class="error-label"><i class="fas fa-exclamation-triangle"></i>This field is required</span> -->
+      </div>
+      <div class="field-wrapper">
+        <label for="message">Message</label>
+        <textarea cols="30" rows="10" id="message"></textarea>
+        <!-- <span class="error-label"><i class="fas fa-exclamation-triangle"></i>This field is required</span> -->
+      </div>
       <button type="submit" class="btn filled">Send</button>
     </form>
     <div class="social-container">

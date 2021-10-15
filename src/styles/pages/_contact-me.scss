@@ -43,11 +43,14 @@
       flex-direction: column;
     }
 
+    .field-wrapper {
+      margin-bottom: 1.5rem;
+    }
+
     input,
     textarea {
       width: 100%;
       height: 4.5rem;
-      margin: 0 0 1.5rem;
       padding: 0.5rem 1.5rem;
       border-radius: 2rem;
       background: $color-3;
@@ -68,8 +71,15 @@
     textarea {
       height: 10rem;
       resize: none;
-      margin: 0 0 2rem;
       padding: 1rem 1.5rem;
+    }
+
+    .error-label {
+      padding: 0 2rem;
+      color: #ff695a;
+      font-weight: 400;
+      font-size: 1.4rem;
+      svg { padding-right: 1rem; vertical-align: middle; }
     }
 
     .btn {
